@@ -1,4 +1,4 @@
-<sup>Gaudet, Vernon; 1504846</sup>
+Gaudet, Vernon
 #Assignment 2: Level 0: A New Language
 
 ##Print Exercises

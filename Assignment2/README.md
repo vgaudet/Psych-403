@@ -1,11 +1,8 @@
 Gaudet, Vernon
-
 # Assignment 2: Level 0: A New Language
 
 ## Print Exercises
-
 	1. Complete. 
-	
 	2. The variables do show up in the variable explorer, if defined outside of a function
 
 ## Operation Exercises

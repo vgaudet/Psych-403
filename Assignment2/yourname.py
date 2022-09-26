@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Gaudet, Vernon
-ASSIGNMENT 2: LEVEL 0: "A NEW LANGUaGE"
+ASSIGNMENT 2: LEVEL 0: "A NEW LANGUAGE"
 """
 import numpy as np
 

@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
-
-This is a temporary script file.
+Gaudet, Vernon
+ASSIGNMENT 2: LEVEL 0: "A NEW LANGUaGE"
 """
 import numpy as np
 
@@ -11,7 +10,7 @@ name = 'VERNON'
 
 # Print Print Exercises
 def printex(name):
-    print("PRINT EXERCISES\n")
+    print("PRINT EXERCISES\nQ1-2) \n")
     # Print name char by char
     for char in name:
          print(char)
@@ -23,20 +22,18 @@ def printex(name):
 def opex():
     
     #Example operations
-    opex1a = 5/2
-    opex1b = 5.0/2.0
-    opex2a = 5 % 2
-    opex3a = 2 ** 3
-    opex3b = 4 // 3
-    opex4a = 2 + 6 + 4 * 4 / 2
+    opex1 = (5/2 , 5.0/2.0)
+    opex2 = 5 % 2
+    opex3 = (2 ** 3, 4 // 3)
+    opex4 = 2 + 6 + 4 * 4 / 2
     
-    return opex1a, opex1b, opex2a, opex3a, opex3b, opex4a
+    return opex1, opex2, opex3, opex4
 
 # Print results from operation exercises
 def printopex(ex2):
-    print("OPERATION EXERCISES")
-    for part in ex2:
-        print(part)
+    print("OPERATION EXERCISES\n Q1-4")
+    for q, part in enumerate(ex2):
+        print(('P' + str(q+1) + ') '), part)
     print('\n')
     
     return
@@ -58,7 +55,7 @@ def varex():
 
 # Print results from variable exercises
 def printvarex(ex3):
-    print("VARIABLE EXERCISES")
+    print("VARIABLE EXERCISES\nQ1-6) \n")
     for part in ex3:
         print(part)
     print('\n')
@@ -70,6 +67,8 @@ def bolex():
     bolex1a = 1 == 1.0 
     bolex1b = "1" == "1.0"
     bolex2a = 5 == (3+2)
+    
+    # 5 different options to return true
     bolex3a = ([
         (1 == 1.0) and ("1" == "1.0") or (5 == (3+2)),
 		(1 == 1.0) or ("1" == "1.0") or (5 == (3+2)),
@@ -82,9 +81,9 @@ def bolex():
 
 # Print results from boolean exercises
 def printbolex(ex4):
-    print("BOOLEAN EXERCISES")
-    for part in ex4:
-        print(part)
+    print("BOOLEAN EXERCISES\nQ1-3")
+    for q, part in enumerate(ex4):
+        print(('P' + str(q+1) + ') '), part)
     print('\n')
     return
 
@@ -101,9 +100,9 @@ def listex():
 
 # Print results from list exercises
 def printlistex(ex5):
-    print("LIST EXERCISES")
-    for part in ex5:
-        print(part)
+    print("LIST EXERCISES\nQ1-6")
+    for q, part in enumerate(ex5):
+        print(('P' + str(q+1) + ') '), part)
     print('\n')
     return
     
@@ -124,9 +123,9 @@ def dictex():
 
 # Print results from dictionary exercises
 def printdictex(ex6):
-    print("DICTIONARY EXERCISES")
-    for part in ex6:
-        print(part)
+    print("DICTIONARY EXERCISES\nQ1-3")
+    for q, part in enumerate(ex6):
+        print(('P' + str(q+1) + ') '), part)
     print('\n')
     return
 
@@ -149,13 +148,15 @@ def arrex():
 
 # Print results from array exercises
 def printarrex(ex7):
-    print("ARRAY EXERCISES\n")
-    for part in ex7:
-        print(part)
+    print("ARRAY EXERCISES\nQ1-4")
+    for q, part in enumerate(ex7):
+        print(('P' + str(q+1) + ') '), part)
     print('\n')
     return
 
+# Print menu for selecting exercise results to print
 def selectionprint(ex1, ex2, ex3, ex4, ex5, ex6, ex7):
+    
     options = ['1','2','3','4','5','6', '7', 'e']
     while True:
         
@@ -203,7 +204,8 @@ def selectionprint(ex1, ex2, ex3, ex4, ex5, ex6, ex7):
 # Main function executing all exercises
 def main():
 
-    # Exercise Sections in following order: Print, Operations, Variables, Dictionaries, Variables, Lists, Arrays
+    # Excecute exercise sections in following order: Print, Operations, Variables, 
+    # Booleans, Variables, Dictionaries, Arrays
    
     ex1 = name
     ex2 = opex()
@@ -212,7 +214,8 @@ def main():
     ex5 = listex()
     ex6 = dictex()
     ex7 = arrex()     
-     
+    
+    # Display print menu
     selectionprint(ex1, ex2, ex3, ex4, ex5, ex6, ex7)
     
     print("Closing...")

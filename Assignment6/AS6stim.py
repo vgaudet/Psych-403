@@ -2,7 +2,7 @@
 """
 Gaudet, Vernon
 
-Assignment 6: Level 3 - PsychoPy 101
+Assignment 6: Level 4: PsychoPy - Showing windows and stimuli
 
 Stimulus excercises. AS6 code with alterations to shorten program and removed comments
 that are not relevant to the stimulus exercises 1 and 2 only.

@@ -2,7 +2,7 @@
 """
 Gaudet, Vernon
 
-Assignment 5: Level 3 - PsychoPy 101
+Assignment 6: Level 4: PsychoPy - Showing windows and stimuli
 """
 
 #=====================

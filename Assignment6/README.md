@@ -18,7 +18,7 @@ Gaudet, Vernon
 	3. Complete.
 
 ## Stimulus exercises
-	1. Setting the images to display at 400p*400p will scale the image to fit that size, disturbing the original proportions of the image. To preserve the proportions of the original image you can use the default setting for image size and define size as a x,y pair scale value of the original image.
+	1. Setting the images to display at 400p*400p will scale the image to fit that size, disturbing the original proportions of the image. To preserve the proportions of the original image you can use the default setting for image size or use height units or normalized units to define size as a x,y pair scale value of the original image.
 	2. Complete. The window is defined in pixels 800p*800p or Xp * Yp. Image positions in pixels are defined by number of pixels from the center of the screen. Each image position should be in the center of a quadrant. the center of a quadrant will be Xp / 4 or Yp / 4. Xp or Yp will be negative or positive depending on the quadrant. Get the window size from the system as Xp and Yp to scale to any window size including fullscreen.  
 	3. Complete.
 	4. Complete.

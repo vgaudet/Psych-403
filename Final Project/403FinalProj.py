@@ -10,6 +10,7 @@ import numpy as np
 from psychopy import core, gui, visual, event, monitors
 import json, os, time, csv
 import random as rand
+import pandas as pd
 
 main_dir = os.getcwd()
 data_dir = os.path.join(main_dir,'data')
@@ -20,10 +21,10 @@ exp_info = {'subject_nr':0, 'age':0, 'handedness':('right','left','ambi')}
 my_dlg = gui.DlgFromDict(dictionary=exp_info, 
                          title= 'subject info', 
                          order = ['subject_nr', 'age', 'handedness' ])
-filename = (str(exp_info['subject_nr']) + 'go_no-go' +'_outputFile.csv')
+filename = (str(exp_info['subject_nr']) + 'go_no-go' +'_outputFile')
 
 nblocks= 2
-ntrials= 5
+ntrials= 2
 ntotal= nblocks * ntrials
 
 stim_dur= 1
@@ -125,11 +126,18 @@ for block in range(nblocks):
 
 win.close()
 
-print(tr_block, ' Blocks')
-print(tr_trial, ' Trials Numbers')
-print(tr_order, ' Stims')
-print(tr_resp, ' Correct Responses')
-print(sub_resp, ' Subject Responses')
-print(sub_acc, ' Subject Accuracy')
-print(sub_RT, ' Subject RT')
+tr_data = {
+ "Block Number": tr_block, 
+ "Trial Number": tr_trial, 
+ "Response": sub_resp,
+ "Correct Response": tr_resp,
+ "Color": tr_order,   
+ "Accuracy": sub_acc, 
+ "Response Time": sub_RT
+}
+# store experiment data to dataframe and save as csv file
+df = pd.DataFrame(data=tr_data)
+df.to_csv(os.path.join(data_dir, filename+ '.csv'), sep=',', index=False) # save to predefined data directory and filename
 
+with open(data_dir +'/'+ filename + '.json', 'w') as outfile:
+        json.dump(tr_data, outfile)

@@ -1,6 +1,10 @@
 README.md
+
 Author: Gaudet, Vernon
+
 403FIN_P_go_nogo.py
+
+
 
 This program is a Go/No-go task. Participants will be presented with colored tiles: blue, yellow and green. Tiles are preceded by a fixation cross. Participants will be instructed to respond to  yellow and blue tiles but to withold responding to green. The majority of trials will present yellow tiles (3/4 chance). This is to habituate responding. Blue and green tile presentations are meant to evoke incorrect responses inferring failure to inhibit responses (1/8 chance each). This is a common experiment paradigm that tests a participant's inhibition and/or decision making capacity. Participants will be prompted for information then shown instructions, then the trials will begin.
 

@@ -12,7 +12,10 @@ The following are recorded for each trial: block number(int), in-block trial num
 
 All recorded elements including subject responses are recorded into lists indexed over entire total trial span. Lists are then stored within a dictionary then saved as JSON and CSV files after experiment course is complete. Files are saved to a folder named 'data' in the working directory. If such a folder does not exist, it will be created. Files are saved in the following format: SUBJECTNUMBER-AGE+HANDEDNESS+DATE.CSV or SUBJECTNUMBER-AGE+HANDEDNESS+DATE.JSON.
 
- * correct response is coded as: 0 = No response, 1 = Response(SPACEBAR).
- ** color codes: 0 = green, 1 = blue, 2 = yellow.
- *** subject response is coded as: 0 = No response/SPACEBAR not pressed, 1 = SPACEBAR pressed.
- **** subject accuracy is coded as: 0 = Incorrect, 1 = Correct
+.* correct response is coded as: 0 = No response, 1 = Response(SPACEBAR).
+ 
+.** color codes: 0 = green, 1 = blue, 2 = yellow.
+
+.*** subject response is coded as: 0 = No response/SPACEBAR not pressed, 1 = SPACEBAR pressed.
+
+.**** subject accuracy is coded as: 0 = Incorrect, 1 = Correct

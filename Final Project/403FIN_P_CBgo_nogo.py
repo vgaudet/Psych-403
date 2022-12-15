@@ -10,7 +10,8 @@ withold responding to green or red. The majority of trials will present yellow a
 Red and  green tile presentations are meant to evoke incorrect responses inferring failure to inhibit responses or failure in color perception (10% chance each). 
 This is experiment is meant to assess color blindness as those with blue-green color blindness have trouble differentiating red 
 from yellow and/or blue from green. Those with color blindness should take longer to respond correctly or fail more often than controls.
-Participants will be prompted for information then shown instructions, then the trials will begin.
+Participants will be prompted for information then shown instructions, then the trials will begin. Participants will make a key press to begin the experiment 
+and to start each block.
 
 
 """

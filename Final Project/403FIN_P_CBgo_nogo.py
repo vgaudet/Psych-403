@@ -111,7 +111,7 @@ fix = visual.TextStim(win, text= '+', color='red') # define fixation cross
 #START EXPERIMENT
 #=====================
 # Intro text
-tr_text.text = 'Welcome to the Go/No-Go Task!\n\n Press SPACE to respond as fast as possible to YELLOW or BLUE squares.\n\nDo NOT respond to GREEN or RED squares.\n\n Press ESCAPE at any time to stop the experiment.\n...\nPress any key to continue!'
+tr_text.text = 'Welcome to the Color Blindness Go/No-Go Task!\n\n Press SPACE to respond as fast as possible to YELLOW or BLUE squares.\n\nDo NOT respond to GREEN or RED squares.\n\n Press ESCAPE at any time to stop the experiment.\n...\nPress any key to continue!'
 tr_text.height = 0.05 # text size
 tr_text.draw() # draw text
 win.flip() # show text

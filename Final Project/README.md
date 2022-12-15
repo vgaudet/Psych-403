@@ -6,7 +6,7 @@ Author: Gaudet, Vernon
 403FIN_P_CBgo_nogo.py
 
 
-This program is a Color blindness Go/No-go task. Participants will be presented with colored tiles: blue, red, yellow and green. 
+This program is a Color blindness Go/No-go task. Participants will be presented with colored tiles: blue, red, yellow and green over 3 blocks of 20 trials. 
 Tiles are preceded by a fixation cross. Participants will be instructed to respond to  yellow and blue tiles but to
 withold responding to green or red. The majority of trials will present yellow and blue tiles (20% blue, 60% yellow). This is to habituate responding. 
 Red and green tile presentations are meant to evoke incorrect responses inferring failure to inhibit responses or failure in color perception (10% chance each). 

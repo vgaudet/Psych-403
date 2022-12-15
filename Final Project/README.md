@@ -12,7 +12,7 @@ Stimuli: blue, yellow and green tiles are meant to be presented for 1 second aft
 
 Countdown timers are used to present stimuli and other elements due to dropped frames on my system.
 
-The following are recorded for each trial: block number(int), in-block trial number(int), stimulus color(str), color code(int)\*, correct response(int)\**, subject response(int)***, subject accuracy(int)\**** and subject response time(float).
+The following are recorded for each trial: block number(int), in-block trial number(int), stimulus color(str), color code(int)\*, correct response(int)\**, subject response(int)\***, subject accuracy(int)\**** and subject response time(float).
 
 All recorded elements including subject responses are recorded into lists indexed over entire total trial span. Lists are then stored within a dictionary then saved as JSON and CSV files after experiment course is complete. Files are saved to a folder named 'data' in the working directory. If such a folder does not exist, it will be created. Files are saved in the following format: SUBJECTNUMBER-AGE+HANDEDNESS+DATE.CSV or SUBJECTNUMBER-AGE+HANDEDNESS+DATE.JSON.
 
